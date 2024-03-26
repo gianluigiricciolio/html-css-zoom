@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+/* LAYOUT */
+
+main .container{
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-7{
+    width: calc(100%/7);
+}
+
+.content{
+    margin:5px;
+    background-color: bisque;
+}
+
+/* FINE LAYOUT */
+
+.content img{
+    max-width: 100%;
+    height: auto;
+    display:block;
+}
+
+
+
+
+/* BACKGROUNDS */
+
+.bg-black{
+    padding:50px;
+    background-color: black;
+    height: calc(100vh - 60px);
+}
+
+.bg-gray{
+    background-color: rgb(50, 50, 50);
+    height:60px;
+}
+
+/* FINE BACKGROUNDS */
