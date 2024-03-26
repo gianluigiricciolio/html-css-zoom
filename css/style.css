@@ -4,11 +4,40 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
 
+/* UTILITY */
+
+.d-flex{
+    display: flex;
+}
+
+.j-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.red{
+    color:red;
+}
+
+/* FINE UTILITY */
 
 /* LAYOUT */
 
 main .container{
+    padding: 75px 90px 0px 90px; /* il padding-bottom non funziona, non riesco a fare in modo che il contenuto shrinki a seconda del limite imposto dal padding*/
+    height: calc(100vh - 60px);
+}
+
+footer .container{
+    height:60px;
 }
 
 .row{
@@ -21,8 +50,7 @@ main .container{
 }
 
 .content{
-    margin:5px;
-    background-color: bisque;
+    margin:7px;
 }
 
 /* FINE LAYOUT */
@@ -39,14 +67,11 @@ main .container{
 /* BACKGROUNDS */
 
 .bg-black{
-    padding:50px;
     background-color: black;
-    height: calc(100vh - 60px);
 }
 
 .bg-gray{
     background-color: rgb(50, 50, 50);
-    height:60px;
 }
 
 /* FINE BACKGROUNDS */
