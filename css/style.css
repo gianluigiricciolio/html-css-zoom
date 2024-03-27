@@ -9,6 +9,23 @@ body{
     color:white;
 }
 
+header{
+    background-color: black;
+    height:60px;
+}
+
+.speaker{
+    text-align: right;
+    padding-right:10px;
+    padding-top:10px;
+}
+
+.speaker span{
+    background-color: rgba(100, 100, 100, .55);
+    padding: 3px 6px;
+    border-radius: 10px;
+}
+
 /* UTILITY */
 
 .d-flex{
@@ -27,13 +44,18 @@ body{
     color:red;
 }
 
+.full-height{
+    height:100%;
+}
+
 /* FINE UTILITY */
 
 /* LAYOUT */
 
 main .container{
-    padding: 75px 90px 0px 90px; /* il padding-bottom non funziona, non riesco a fare in modo che il contenuto shrinki a seconda del limite imposto dal padding*/
-    height: calc(100vh - 60px);
+    max-width: 1300px;
+    margin:0 auto;
+    height: calc(100vh - 120px);
 }
 
 footer .container{
@@ -43,6 +65,7 @@ footer .container{
 .row{
     display: flex;
     flex-wrap: wrap;
+    height:60px;
 }
 
 .col-7{
@@ -50,7 +73,7 @@ footer .container{
 }
 
 .content{
-    margin:7px;
+    margin:5px;
 }
 
 /* FINE LAYOUT */
@@ -61,8 +84,25 @@ footer .container{
     display:block;
 }
 
+.col-7 .content{
+    position:relative;
+}
 
+.info-utente{
+    align-items:center ;
+    display: flex;
+    padding:3px 6px;
+    font-size: .65em;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background-color: rgba(100, 100, 100, .55);
+}
 
+.info-utente img{
+    height:15px;
+    display: inline-block;
+}
 
 /* BACKGROUNDS */
 
